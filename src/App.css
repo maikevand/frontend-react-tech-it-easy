@@ -6,7 +6,8 @@
 /*    3.2 Other*/
 /*4. Areas*/
 /*    4.1 Header*/
-/*    4.2 Introduction*/
+/*    4.2 Verkoopoverzicht*/
+/*    4.3 Best verkochte tv*/
 /*    etc.*/
 /*5. Media Queries*/
 
@@ -41,6 +42,14 @@
 
 /* --------------- 4.1 Header ------------------------- */
 
-/* --------------- 4.2 Introduction ------------------- */
+/* --------------- 4.2 Verkoopoverzicht ------------------- */
 
+/* --------------- 4.2 Best verkochte tv ------------------- */
+#best-seller-img {
+    max-width: 200px;
+}
+
+.icon {
+    max-width: 20px;
+}
 /* ------------------------------- 5. Media Queries -------------------------------- */
