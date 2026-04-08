@@ -1,4 +1,5 @@
 import './App.css';
+import '../helpers/soldTVs.js'
 
 function App() {
   return (
