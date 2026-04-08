@@ -1,7 +1,6 @@
-import {inventory} from "../src/constants/inventory.js";
 import {calculateTotalStock} from "./calculateTotalStock.js";
-import {calculateSoldTvs} from "./calculateSoldTvs.js";
+import {calculateSoldProducts} from "./calculateSoldProducts.js";
 
-export function calculateRemainingStock() {
-    return calculateTotalStock() - calculateSoldTvs();
+export function calculateRemainingStock(inventory) {
+    return calculateTotalStock(inventory) - calculateSoldProducts(inventory);
 }
