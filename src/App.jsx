@@ -1,3 +1,6 @@
+// App.jsx
+import showOutcomeInConsole from './constants/oefenbestand.js';
+
 import './App.css';
 import {bestSellingTv, inventory} from "./constants/inventory.js";
 import {calculateSoldProducts} from "../helpers/calculateSoldProducts.js";
@@ -8,6 +11,7 @@ import {formatPrice} from "../helpers/formatPrice.js";
 import {formatSize} from "../helpers/formatSize.js";
 
 function App() {
+showOutcomeInConsole();
 
     console.log(calculateSoldProducts(inventory));
     console.log(calculateTotalStock(inventory));
