@@ -20,23 +20,28 @@ function App() {
 
     console.log(calculateSoldProducts(inventory));
     console.log(calculateTotalStock(inventory));
+
     // console.log(mostSoldFirst(inventory));
 
-    function handleClick(event) {
-        if (event.target.textContent === 'Meest verkocht eerst') {
-            console.log(mostSoldFirst(inventory));
-        }
-        if (event.target.textContent === 'Goedkoopste eerst') {
-            console.log(cheapestFirst(inventory));
-        }
-        if (event.target.textContent === 'Meest geschikt voor sport eerst') {
-            console.log(bestSportsFirst(inventory));
-        }
+
+    function handleMostSoldClick() {
+        console.log(mostSoldFirst(inventory));
     }
 
-    return (
-        <>
+    function handleCheapestClick() {
+        console.log(cheapestFirst(inventory));
+    }
+
+    function handleBestSportsClick() {
+        console.log(bestSportsFirst(inventory));
+    }
+
+return (
+    <>
+        <header>
             <h1>Tech it easy dashboard</h1>
+        </header>
+        <main>
             <section>
                 <h2>Verkoopoverzicht</h2>
                 <p className="green-text">Aantal verkochte producten: {calculateSoldProducts(inventory)}</p>
@@ -60,9 +65,9 @@ function App() {
             </section>
             <section>
                 <h2>Alle tv's</h2>
-                <button className="button" type="button" onClick={handleClick}>Meest verkocht eerst</button>
-                <button className="button" type="button" onClick={handleClick}>Goedkoopste eerst</button>
-                <button className="button" type="button" onClick={handleClick}>Meest geschikt voor sport eerst</button>
+                <button type="button" onClick={handleMostSoldClick}>Meest verkocht eerst</button>
+                <button type="button" onClick={handleCheapestClick}>Goedkoopste eerst</button>
+                <button type="button" onClick={handleBestSportsClick}>Meest geschikt voor sport eerst</button>
                 {/*{tvNames(inventory).map((tvName) => {*/}
                 {/*    return <p key={tvName}>{tvName}</p>*/}
                 {/*}*/}
@@ -88,8 +93,12 @@ function App() {
                     </div>
                 ))}
             </section>
-        </>
-    );
+        </main>
+        <footer>
+            <p>©️2026 Tech It Easy</p>
+        </footer>
+    </>
+);
 }
 
 export default App
