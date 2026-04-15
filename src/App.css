@@ -45,7 +45,7 @@
 /* --------------- 4.2 Verkoopoverzicht ------------------- */
 
 /* --------------- 4.2 Best verkochte tv ------------------- */
-#best-seller-img {
+#best-seller-img, .tv-images {
     max-width: 200px;
 }
 
