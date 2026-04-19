@@ -19,18 +19,12 @@
     padding: 0;
 }
 
+header, main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
-.green-text {
-    color: green;
-}
-
-.blue-text {
-    color: blue;
-}
-
-.red-text {
-    color: red;
-}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -42,6 +36,7 @@
 .icon {
     max-width: 20px;
 }
+
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -49,6 +44,35 @@
 /* --------------- 4.1 Header ------------------------- */
 
 /* --------------- 4.2 Verkoopoverzicht ------------------- */
+.statistics {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.statistics-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 10rem;
+    padding: 1rem;
+}
+
+#numbers-sold {
+    color: green;
+    background-color: lightgreen;
+}
+
+#numbers-bought {
+    color: blue;
+    background-color: lightblue;
+}
+
+#numbers-stock {
+    color: orangered;
+    background-color: lightgoldenrodyellow;
+}
 
 /* --------------- 4.2 Best verkochte tv ------------------- */
 
